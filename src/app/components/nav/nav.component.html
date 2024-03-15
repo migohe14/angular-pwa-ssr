@@ -22,50 +22,46 @@
           <div class="cs-ul-wrapper">
               <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                   <li class="cs-li">
-                      <a routerLink="/" class="cs-li-link cs-active">
-                          Inicio
-                      </a>
+                    <a routerLink="/" class="cs-li-link cs-active">
+                        {{ 'home' | translate }}
+                    </a>
                   </li>
             
                   <li class="cs-li cs-dropdown" tabindex="0">
-                      <span class="cs-li-link">
-                          Servicios
-                          <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                      </span>
-                      <ul class="cs-drop-ul">
-                          <li class="cs-drop-li">
-                              <a routerLink="/paisajismo-jardines" class="cs-li-link cs-drop-link">Jardinería y Paisajismo</a>
-                          </li>
-                          <li class="cs-drop-li">
-                              <a routerLink="/mantenimiento-jardines" class="cs-li-link cs-drop-link">Mantenimiento de Jardines</a>
-                          </li>
-                          <li class="cs-drop-li">
-                              <a routerLink="/mantenimiento-piscinas" class="cs-li-link cs-drop-link">Mantenimiento de Piscinas</a>
-                          </li>
-                      
-                      </ul>
-                  </li>
-             
-                  <li class="cs-li">
-                      <a routerLink="/about" class="cs-li-link">
-                          Contacto
-                      </a>
-                  </li>
+                    <span class="cs-li-link">
+                        {{ 'services' | translate }}
+                        <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                    </span>
+                    <ul class="cs-drop-ul">
+                        <li class="cs-drop-li">
+                            <a routerLink="/paisajismo-jardines" class="cs-li-link cs-drop-link">{{ 'title' | translate }}</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a routerLink="/mantenimiento-jardines" class="cs-li-link cs-drop-link">{{ 'gardenmaintenance' | translate }}</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a routerLink="/mantenimiento-piscinas" class="cs-li-link cs-drop-link">Mantenimiento de Piscinas</a>
+            
+                        <li class="cs-li">
+                            <a href="mailto:avigarden_jarypas@hotmail.com" target="_blank" class="cs-li-link">
+                                {{ 'contact' | translate }}
+                            </a>
+                        </li>
               </ul>
           </div>
       </nav>
       <div class="cs-contact-group">
         
           <div class="cs-social">
-              <a href="" class="cs-social-link">
-                  <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+              <a (click)="onSetLanguage('es')" class="cs-social-link">
+                  <img class="cs-social-icon" src="../../../assets/flags/espana.png" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
               </a>
           
-              <a href="" class="cs-social-link">
-                  <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+              <a (click)="onSetLanguage('en')" class="cs-social-link">
+                  <img class="cs-social-icon" src="../../../assets/flags/reino-unido.png" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
               </a>
-              <a href="" class="cs-social-link">
-                  <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+              <a (click)="onSetLanguage('de')" class="cs-social-link">
+                  <img class="cs-social-icon" src="../../../assets/flags/alemania.png" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
               </a>
           </div>
       </div>

@@ -1,17 +1,21 @@
 {
-  "navigation": {
+  "title": "Jardinería y Paisajismo",
+  "text": "Bienvenido a nuestra web",
+  "contact": "Contacto",
+  "home": "Inicio",
+  "services": "Servicios",
+  "otherservices": "Otros servicios",
+  "budget": "Pedir presupuesto",
+  "gardenmaintenance": "Mantenimiento de Jardines",
+  "poolmaintenance": "Mantenimiento de Piscinas",
+  "serviceof": "Servicio de",
+  "title1": "Belleza natural asegurada",
+  "title2": "Experiencia y fiabilidad",
+  "title3": "Compromiso con la perfección",
+  "title4": "Tu oasis personalizado",
 
-    "name": "Commercios",
-    "about": "Acerca de",
-    "contact": "Contacto"
-  },
-  "home": {
-    "inputplace": "Introduce un código postal"
-  },
-  "about": {
-    "title": "RATP Commercios API"
-  },
-  "contact": {
-    "by": "App por"
-  }
+  "text1": "Con nuestro servicio de paisajismo y jardinería, transformamos tus espacios exteriores en verdaderos paraísos de flora y fauna, garantizando un ambiente visualmente deslumbrante.",
+  "text2": "Con una trayectoria probada en el sector, ofrecemos servicios de paisajismo y jardinería que combinan creatividad, calidad y compromiso, asegurando la máxima satisfacción de nuestros clientes.",
+  "text3": "BEn el mantenimiento de piscinas, nos esforzamos por alcanzar la excelencia en cada detalle, desde el equilibrio químico del agua hasta la limpieza meticulosa, garantizando un ambiente acuático impecable en todo momento.",
+  "text4": "Con una atención cuidadosa a tus necesidades y deseos, nuestro servicio de mantenimiento de piscinas adapta cada programa según tus preferencias, asegurando que tu oasis acuático refleje tu estilo de vida y personalidad."
 }

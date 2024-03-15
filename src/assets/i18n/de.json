@@ -1,14 +1,15 @@
 {
-  "title": "Gardening and Landscaping",
-  "text": "Welcome to our website",
-  "contact": "Contact",
-  "home": "Home",
-  "services": "Services",
-  "otherservices": "Other services",
-  "budget": "Request a Quote",
-  "gardenmaintenance": "Garden Maintenance",
-  "poolmaintenance": "Pool Maintenance",
-  "serviceof": "Service of",
+  "title": "Garten- und Landschaftsbau",
+  "text": "Willkommen auf unserer Webseite",
+  "contact": "Kontakt",
+  "home": "Startseite",
+  "services": "Dienstleistungen",
+  "otherservices": "Andere Dienstleistungen",
+  "budget": "Kostenvoranschlag anfordern",
+  "gardenmaintenance": "Gartenpflege",
+  "poolmaintenance": "Poolwartung",
+  "serviceof": "Dienstleistung von",
+
   "title1": "Natural Beauty Ensured",
   "title2": "Experience and Reliability",
   "title3": "Commitment to Perfection",
@@ -19,4 +20,5 @@
   "text3": "In pool maintenance, we strive for excellence in every detail, from the chemical balance of the water to meticulous cleaning, ensuring an impeccable aquatic environment at all times.",
   "text4": "With careful attention to your needs and desires, our pool maintenance service tailors each program according to your preferences, ensuring that your aquatic oasis reflects your lifestyle and personality."
 
+  
 }

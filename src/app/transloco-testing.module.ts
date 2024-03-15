@@ -3,7 +3,7 @@ import {
   TranslocoTestingOptions
 } from "@ngneat/transloco";
 import en from "../assets/i18n/en.json";
-import fr from "../assets/i18n/fr.json";
+import fr from "../assets/i18n/de.json";
 import es from "../assets/i18n/es.json";
 
 export function getTranslocoModule(options: TranslocoTestingOptions = {}) {
@@ -11,7 +11,7 @@ export function getTranslocoModule(options: TranslocoTestingOptions = {}) {
     langs: { fr, en, es },
     translocoConfig: {
       availableLangs: ["fr", "en", "es"],
-      defaultLang: "en"
+      defaultLang: "es"
     },
     preloadLangs: true,
     ...options

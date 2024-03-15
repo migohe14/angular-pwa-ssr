@@ -643,14 +643,6 @@
             align-items: center;
             transition: background-color 0.3s;
 
-            &:hover {
-                background-color: var(--primary);
-
-                .cs-social-icon {
-                    opacity: 1;
-                    filter: grayscale(1) brightness(10000%);
-                }
-            }
         }
 
         .cs-social-icon {
