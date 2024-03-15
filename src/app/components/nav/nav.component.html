@@ -1,70 +1,73 @@
-
 <!-- ============================================ -->
 <!--                 Navigation                   -->
 <!-- ============================================ -->
 
 <header id="cs-navigation">
-  <div class="cs-container">
-      <a routerLink="/" class="cs-logo" aria-label="back to home">
-          <img src="../../../assets/logo.jpg" alt="logo" aria-hidden="true" decoding="async">
-      </a>
-      <!--Navigation List-->
-      <nav class="cs-nav" role="navigation">
-          <!--Mobile Nav Toggle-->
-          <button class="cs-toggle" aria-label="mobile menu toggle">
-              <div class="cs-box" aria-hidden="true">
-                  <span class="cs-line cs-line1" aria-hidden="true"></span>
-                  <span class="cs-line cs-line2" aria-hidden="true"></span>
-                  <span class="cs-line cs-line3" aria-hidden="true"></span>
-              </div>
-          </button>
-          <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-          <div class="cs-ul-wrapper">
-              <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                  <li class="cs-li">
-                    <a routerLink="/" class="cs-li-link cs-active">
-                        {{ 'home' | translate }}
-                    </a>
-                  </li>
-            
-                  <li class="cs-li cs-dropdown" tabindex="0">
-                    <span class="cs-li-link">
-                        {{ 'services' | translate }}
-                        <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                    </span>
-                    <ul class="cs-drop-ul">
-                        <li class="cs-drop-li">
-                            <a routerLink="/paisajismo-jardines" class="cs-li-link cs-drop-link">{{ 'title' | translate }}</a>
-                        </li>
-                        <li class="cs-drop-li">
-                            <a routerLink="/mantenimiento-jardines" class="cs-li-link cs-drop-link">{{ 'gardenmaintenance' | translate }}</a>
-                        </li>
-                        <li class="cs-drop-li">
-                            <a routerLink="/mantenimiento-piscinas" class="cs-li-link cs-drop-link">Mantenimiento de Piscinas</a>
-            
-                        <li class="cs-li">
-                            <a href="mailto:avigarden_jarypas@hotmail.com" target="_blank" class="cs-li-link">
-                                {{ 'contact' | translate }}
-                            </a>
-                        </li>
-              </ul>
-          </div>
-      </nav>
-      <div class="cs-contact-group">
-        
-          <div class="cs-social">
-              <a (click)="onSetLanguage('es')" class="cs-social-link">
-                  <img class="cs-social-icon" src="../../../assets/flags/espana.png" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
-              </a>
+    <div class="cs-container">
+        <a routerLink="/" class="cs-logo">
+            <img src="../../../assets/logo.jpg" alt="logo" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a routerLink="/" class="cs-li-link cs-active">
+                            {{ 'home' | transloco }}
+                        </a>
+                    </li>
+              
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            {{ 'services' | transloco }}
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a routerLink="/paisajismo-jardines" class="cs-li-link cs-drop-link">{{ 'title' | transloco }}</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a routerLink="/mantenimiento-jardines" class="cs-li-link cs-drop-link">{{ 'gardenmaintenance' | transloco }}</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a routerLink="/mantenimiento-piscinas" class="cs-li-link cs-drop-link">{{ 'poolmaintenance' | transloco }}</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+               
+                    <li class="cs-li">
+                        <a routerLink="/about" class="cs-li-link">
+                            {{ 'contact' | transloco }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-contact-group">
           
-              <a (click)="onSetLanguage('en')" class="cs-social-link">
-                  <img class="cs-social-icon" src="../../../assets/flags/reino-unido.png" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
-              </a>
-              <a (click)="onSetLanguage('de')" class="cs-social-link">
-                  <img class="cs-social-icon" src="../../../assets/flags/alemania.png" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
-              </a>
-          </div>
-      </div>
-  </div>
-</header>
-                              
+            <div class="cs-social">
+                <a (click)="onSetLanguage('es')" class="cs-social-link">
+                    <img class="cs-social-icon" src="../../../assets/flags/espana.png" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            
+                <a (click)="onSetLanguage('en')" class="cs-social-link">
+                    <img class="cs-social-icon" src="../../../assets/flags/reino-unido.png" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a (click)="onSetLanguage('de')" class="cs-social-link">
+                    <img class="cs-social-icon" src="../../../assets/flags/alemania.png" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+        </div>
+    </div>
+  </header>
+  
