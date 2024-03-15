@@ -14,6 +14,10 @@ const routes: Routes = [
     loadChildren: () => import("./components/about/about.module")
   },
   {
+    path: "mantenimiento-jardines",
+    loadChildren: () => import("./components/garden/garden.module")
+  },
+  {
     path: "contact",
     loadChildren: () => import("./components/contact/contact.module")
   },

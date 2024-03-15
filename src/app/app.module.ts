@@ -12,9 +12,11 @@ import { ServiceWorkerModule } from "@angular/service-worker";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
 import { HomeComponent } from "./components/home/home.component";
 import { NavComponent } from "./components/nav/nav.component";
+import { GalleryFilterComponent } from "./components/gallery-filter/gallery-filter.component";
+
 
 @NgModule({
-  declarations: [AppComponent, NotFoundComponent, HomeComponent, NavComponent],
+  declarations: [AppComponent, NotFoundComponent, HomeComponent, NavComponent, GalleryFilterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

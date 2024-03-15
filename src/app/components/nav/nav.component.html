@@ -1,46 +1,74 @@
-<nav
-  class="flex flex-row content-center justify-between w-full pt-1 pl-1 pr-3 font-sans text-center shadow sm:items-baseline"
->
-  <!--navbar LHS-->
-  <div class="self-center">
-    <a
-      class="nav-link"
-      aria-label="home nav link"
-      routerLink="/"
-      routerLinkActive="nav-link-active"
-    >
-      <div class="flex text-center">
-        <img
-          class="nav-left-icon"
-          src="./../../../assets/ratp.png"
-          width="50"
-          height="50"
-          alt="image of paris transport ratp"
-          loading="lazy"
-        />
-        <p class="pt-3">{{ "navigation.name" | transloco }}</p>
-      </div>
-    </a>
-  </div>
 
-  <!--navbar RHS-->
-  <div class="self-center">
-    <a
-      class="nav-right nav-link"
-      aria-label="about nav link"
-      routerLink="/about"
-      routerLinkActive="nav-link-active"
-      >{{ "navigation.about" | transloco }}</a
-    >
-    <a
-      class="nav-right nav-link"
-      aria-label="contact nav link"
-      routerLink="/contact"
-      routerLinkActive="nav-link-active"
-      >{{ "navigation.contact" | transloco }}</a
-    >
-    <button class="nav-lang-button" (click)="onSetLanguage('fr')">FR</button>
-    <button class="nav-lang-button" (click)="onSetLanguage('es')">ES</button>
-    <button class="nav-lang-button" (click)="onSetLanguage('en')">EN</button>
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+  <div class="cs-container">
+      <a routerLink="/" class="cs-logo" aria-label="back to home">
+          <img src="../../../assets/logo.jpg" alt="logo" aria-hidden="true" decoding="async">
+      </a>
+      <!--Navigation List-->
+      <nav class="cs-nav" role="navigation">
+          <!--Mobile Nav Toggle-->
+          <button class="cs-toggle" aria-label="mobile menu toggle">
+              <div class="cs-box" aria-hidden="true">
+                  <span class="cs-line cs-line1" aria-hidden="true"></span>
+                  <span class="cs-line cs-line2" aria-hidden="true"></span>
+                  <span class="cs-line cs-line3" aria-hidden="true"></span>
+              </div>
+          </button>
+          <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+          <div class="cs-ul-wrapper">
+              <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                  <li class="cs-li">
+                      <a routerLink="/" class="cs-li-link cs-active">
+                          Inicio
+                      </a>
+                  </li>
+            
+                  <li class="cs-li cs-dropdown" tabindex="0">
+                      <span class="cs-li-link">
+                          Servicios
+                          <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                      </span>
+                      <ul class="cs-drop-ul">
+                          <li class="cs-drop-li">
+                              <a routerLink="/paisajismo-jardines" class="cs-li-link cs-drop-link">Jardinería y Paisajismo</a>
+                          </li>
+                          <li class="cs-drop-li">
+                              <a routerLink="/mantenimiento-jardines" class="cs-li-link cs-drop-link">Mantenimiento de Jardines</a>
+                          </li>
+                          <li class="cs-drop-li">
+                              <a routerLink="/mantenimiento-piscinas" class="cs-li-link cs-drop-link">Mantenimiento de Piscinas</a>
+                          </li>
+                      
+                      </ul>
+                  </li>
+             
+                  <li class="cs-li">
+                      <a routerLink="/about" class="cs-li-link">
+                          Contacto
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      <div class="cs-contact-group">
+        
+          <div class="cs-social">
+              <a href="" class="cs-social-link">
+                  <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+              </a>
+          
+              <a href="" class="cs-social-link">
+                  <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+              </a>
+              <a href="" class="cs-social-link">
+                  <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+              </a>
+          </div>
+      </div>
   </div>
-</nav>
+</header>
+                              

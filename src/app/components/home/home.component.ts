@@ -8,6 +8,7 @@ import { RatpResponse, Record } from '../../models/ratp';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
   @ViewChild('form') form?: NgForm;
