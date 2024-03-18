@@ -33,7 +33,7 @@ export function app(): express.Express {
     })
   );
 
-  server.get("*", (req, res) => {
+  server.get("*", (req:any, res:any) => {
     res.render(indexHtml, {
       req,
       providers: [

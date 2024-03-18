@@ -18,6 +18,27 @@ const routes: Routes = [
     loadChildren: () => import("./components/garden/garden.module")
   },
   {
+    path: "mantenimiento-piscinas",
+    loadChildren: () => import("./components/pool/pool.module")
+  },
+  {
+    path: "paisajismo-jardines",
+    loadChildren: () => import("./components/desing-garden/design-garden.module")
+  },
+  {
+    path: "mantenimiento-jardines/:city",
+    loadChildren: () => import("./components/garden/garden.module")
+  },
+  {
+    path: "mantenimiento-piscinas/:city",
+    loadChildren: () => import("./components/pool/pool.module")
+  },
+  {
+    path: "paisajismo-jardines/:city",
+    loadChildren: () => import("./components/desing-garden/design-garden.module")
+  },
+  
+  {
     path: "contact",
     loadChildren: () => import("./components/contact/contact.module")
   },
