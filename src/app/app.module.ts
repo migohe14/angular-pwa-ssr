@@ -13,10 +13,11 @@ import { NotFoundComponent } from "./components/not-found/not-found.component";
 import { HomeComponent } from "./components/home/home.component";
 import { NavComponent } from "./components/nav/nav.component";
 import { GalleryFilterComponent } from "./components/gallery-filter/gallery-filter.component";
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
-  declarations: [AppComponent, NotFoundComponent, HomeComponent, NavComponent, GalleryFilterComponent],
+  declarations: [AppComponent, NotFoundComponent, HomeComponent, NavComponent, GalleryFilterComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
